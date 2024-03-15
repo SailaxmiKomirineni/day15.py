@@ -12,7 +12,7 @@
           print(addition(1,2,3))
 
          def addition(*a):
-             print(type(a))                  =><class 'tuple'>
+             print(type(a))                  => <class 'tuple'>
              return sum(a) 
          print(addition(1,2,3))              => 6
 
@@ -20,10 +20,27 @@
     For dictionaries we use **
                
    Ex:-  def student(**k):
-            print(type(k))                   =><class 'dict'>
+            print(type(k))                   => <class 'dict'>
          return k.keys()
-         print(student(name = [1,2,3,4]))    =>dict_keys(['name'])
+         print(student(name = [1,2,3,4]))    => dict_keys(['name'])
+         print(student(name = "ram"))        => dict_keys(['name'])
+         print(student(1=2))                 => error
                
-               
+=> Class:-
+class movie:
+  def __init__(self, hero, heroine, director, villain):
+    self.hero = hero
+    self.heroine = heroine
+    self.director = director
+    self.villain = villain
+  def dofight(self):
+    print(f"{self.hero} {self.villain}")
+  
+Animal = movie('ran', 'ram','san', 'bob')
+Salaar = movie('par', 'sru', 'pras', 'prud')
+Animal.dofight()
+Salaar.dofight()
 
+OUTPUT:-  ran bob
+          par prud
       
