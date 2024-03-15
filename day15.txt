@@ -38,9 +38,11 @@ class movie:
   
 Animal = movie('ran', 'ram','san', 'bob')
 Salaar = movie('par', 'sru', 'pras', 'prud')
+print(Animal.hero)     
 Animal.dofight()
 Salaar.dofight()
 
-OUTPUT:-  ran bob
+OUTPUT:-  ran
+          ran bob
           par prud
       
