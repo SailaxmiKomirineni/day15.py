@@ -1,0 +1,29 @@
+=> Reduce:-
+   A method that reduces a list or tuple to single value.It is a Higher Order Function like map, filter, lambda
+   EX:- 
+      nums = [1,2,3,4]
+      from functools import reduce
+      nums1 = reduce(lambda x,y:x+y, nums)
+      print(nums1)  => 10
+
+=>*args:-
+    Ex:-  def addition(a,b):
+             return a+b 
+          print(addition(1,2,3))
+
+         def addition(*a):
+             print(type(a))                  =><class 'tuple'>
+             return sum(a) 
+         print(addition(1,2,3))              => 6
+
+=> **kwargs :-
+    For dictionaries we use **
+               
+   Ex:-  def student(**k):
+            print(type(k))                   =><class 'dict'>
+         return k.keys()
+         print(student(name = [1,2,3,4]))    =>dict_keys(['name'])
+               
+               
+
+      
